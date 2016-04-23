@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<div class="card container">
+  <p>
+    <br>
+    <h1><%= @post.title %></h1>
+  </p>
+  
+  <p>
+    <strong>Date: </strong>
+    <%= @post.created_at.to_date %>
+  </p>
+  
+  <br>
+  
+  <p>
+    
+    <h5><%= @post.body %></h5>
+  </p>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <%= link_to 'Back', posts_path, class: "btn btn-info" %> |
+  <%= link_to 'Edit', edit_post_path(@post), class: "btn btn-info" %>
+</div>
